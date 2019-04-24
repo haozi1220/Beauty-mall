@@ -19,17 +19,20 @@ function component (fold, name = fold){
 
 export default new Router({
     linkActiveClass: 'active',
-    mode: 'history',
+    // mode: 'history',
     routes: [
         {
             path: '/',
-            redirect: '/loginSign'
+            redirect: '/index'
         },
         {
             path: '/loginSign',
             name: 'loginSign',
             redirect: '/loginSign/logIn',
             component: component('loginSign'),
+            meta: {
+                loginState: false
+            },
             children: [
                 {
                     path: '/loginSign/logIn',
@@ -48,46 +51,41 @@ export default new Router({
             redirect: '/home',
             component: component('index'),
             meta: {
-                title: '首页'
+                title: '首页',
+                loginState: false
             },
             children: [
                 {
-                    path: 'home',
+                    path: '/home',
                     name: 'home',
                     redirect: '/home/handpick',
                     component: component('home'),
+                    meta: {
+                        requireAuth: false
+                    },
                     children: [
                         {
                             path: '/home/handpick',
                             name: 'handpick',
-                            component: component('handpick')
+                            component: component('home','handpick')
                         },{
-                            path: '/home/gifts',
+                            path: '/home/gifts/:productName',
                             name: 'gifts',
-                            component: component('gifts')
+                            component: component('home','gifts')
                         },{
-                            path: '/home/accessories',
-                            name: 'accessories',
-                            component: component('accessories')
-                        },{
-                            path: '/home/makeup',
-                            name: 'makeup',
-                            component: component('makeup')
-                        },{
-                            path: '/home/bag',
+                            path: '/home/bag/:productName',
                             name: 'bag',
-                            component: component('bag')
-                        },{
-                            path: '/home/shoes',
-                            name: 'shoes',
-                            component: component('shoes')
+                            component: component('home','bag')
                         }
                     ]
                 },{
-                    path: 'search',
+                    path: '/search',
                     name: 'search',
                     redirect: '/search/searchList',
                     component: component('search'),
+                    meta: {
+                        requireAuth: false
+                    },
                     children: [
                         {
                             path: '/search/searchList',
@@ -102,10 +100,13 @@ export default new Router({
 
                     ]
                 },{
-                    path: 'messager',
+                    path: '/messager',
                     name: 'messager',
                     redirect: '/messager/chatList',
                     component: component('messager'),
+                    meta: {
+                        requireAuth: true
+                    },
                     children: [
                         {
                             path: '/messager/chatList',
@@ -134,15 +135,18 @@ export default new Router({
                         }
                     ]
                 },{
-                    path: 'mine',
+                    path: '/mine',
                     name: 'mine',
+                    meta: {
+                        requireAuth: true
+                    },
                     component: component('mine')
                 },{
-                    path: 'giftDetails',
+                    path: '/giftDetails',
                     name: 'giftDetails',
                     component: component('giftDetails')
                 },{
-                    path: 'allMessage',
+                    path: '/allMessage',
                     name: 'allMessage',
                     component: component('allMessage')
                 }

@@ -5,7 +5,7 @@
             <router-link tag="li" to="/messager/interAction" class="messager_tab_li">互动</router-link>
         </ul>
         <div class="messager_wrap" @click="goAllMessage">
-            <img src="../../../static/images/message_icon.png" height="44" width="48">
+            <img src="~images/message_icon.png" height="44" width="48">
         </div>
         <div class="messager_view">
             <router-view/>

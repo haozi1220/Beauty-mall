@@ -1,7 +1,7 @@
 <template>
     <div class="login_sign_contain">
         <div class="top_img_contain">
-            <img src="../../../static/images/logo_bg.png" height="360" width="750">
+            <img src="~images/logo_bg.png" height="360" width="750">
         </div>
         <ul class="login_sign_nav">
             <router-link tag="li" to="/loginSign/logIn" class="login_sign_item">登录</router-link>

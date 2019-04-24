@@ -2,7 +2,7 @@
     <div class="personal_center_contain">
         <div class="top_contain">
             <span class="avatar_contain">
-                <img src="../../common/images/person_avatar.png" height="140" width="140">
+                <img src="~images/person_avatar.png" height="140" width="140">
             </span>
             <span class="personal_info">
                 <strong class="personal_name">Charlotter</strong>
@@ -62,7 +62,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-    @import '../../common/sass/mixin';
+    @import '~@/common/sass/mixin';
     .top_contain { position: relative; padding: 40px 65px 0; text-align: left;
         span { display: inline-block; vertical-align: top;
             &.avatar_contain { width: 140px; height: 140px; border: 3px solid #fcfbfb; border-radius: 50%; overflow: hidden;
@@ -71,7 +71,7 @@ export default {
             &.personal_info { margin-left: 37px; height: 100%; padding: 34px 0 43px;
                 strong { display: block;
                     &.personal_name { font-size: 36px; line-height: 1; color: #4a4a4a; }
-                    &.personal_tag { padding-left: 30px; margin-top: 10px; height: 24px; font-size: 16px; line-height: 24px; color: #9b9b9b; background: url('../../../static/images/tag_icon.png') no-repeat left center; background-size: 24px 24px;}
+                    &.personal_tag { padding-left: 30px; margin-top: 10px; height: 24px; font-size: 16px; line-height: 24px; color: #9b9b9b; background: url('~@/common/images/tag_icon.png') no-repeat left center; background-size: 24px 24px;}
                 }
             }
             &.to_personal_homepage { position: absolute; right: 75px; top: 80px; width: 200px; text-align: center; font-size: 30px; line-height: 50px; border: 1px solid #9b9b9b; border-radius: 10px; }
@@ -80,16 +80,16 @@ export default {
     .center_nav { padding: 35px 55px; display: flex; justify-content: space-around; align-items: center;
         .center_nav_item { width: 20%; display: block; text-align: center; @include extend-click();
             i { display: block; width: 40px; height: 40px; margin: 0 auto;
-                &.club_icon { background: url('../../../static/images/club_icon.png') no-repeat center center; background-size: 40px 40px; }
-                &.collection_icon { background: url('../../../static/images/collect_icon.png') no-repeat center center; background-size: 40px 40px; }
-                &.shopping_icon { background: url('../../../static/images/shopping_icon.png') no-repeat center center; background-size: 40px 40px; }
-                &.store_icon { background: url('../../../static/images/store_icon.png') no-repeat center center; background-size: 40px 40px; }
+                &.club_icon { background: url('~@/common/images/club_icon.png') no-repeat center center; background-size: 40px 40px; }
+                &.collection_icon { background: url('~@/common/images/collect_icon.png') no-repeat center center; background-size: 40px 40px; }
+                &.shopping_icon { background: url('~@/common/images/shopping_icon.png') no-repeat center center; background-size: 40px 40px; }
+                &.store_icon { background: url('~@/common/images/store_icon.png') no-repeat center center; background-size: 40px 40px; }
             }
             .text { display: block; padding-top: 10px; font-size: 24px; line-height: 1; color: #555; }
         }
     }
     .center_list { padding: 4px 55px 0; text-align: left;
-        .center_link_item { padding-top: 54px; background: url('../../../static/images/right_icon.png') no-repeat right center; background-size: 11px 20px;
+        .center_link_item { padding-top: 54px; background: url('~@/common/images/right_icon.png') no-repeat right center; background-size: 11px 20px;
             .center_item { font-size: 28px; line-height: 1; color: #555; }
         }
     }

@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import GiftList from '../../components/GiftList'
+import GiftList from '@/components/GiftList'
 export default {
     data(){
         return {

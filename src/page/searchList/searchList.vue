@@ -53,12 +53,12 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-    @import '../../common/sass/mixin';
+    @import '~@/common/sass/mixin';
     .search_contain { position: relative; height: 100%; overflow: hidden;
         .top_contain { position: absolute; display: flex; justify-content: space-between; top: 0; left: 0; right: 0; padding: 24px 57px 36px; z-index: 1; background: #fff;
-            .graph_span { display: block; width: 44px; height: 42px; @include extend-click(); background: url('../../../static/images/graph_icon.png') no-repeat center center; background-size: 38px 33px; }
+            .graph_span { display: block; width: 44px; height: 42px; @include extend-click(); background: url('~@/common/images/graph_icon.png') no-repeat center center; background-size: 38px 33px; }
             .title { font-size: 32px; ;line-height: 42px; color: #484747; }
-            .shape_span { display: block; width: 42px; height: 42px; @include extend-click(); background: url('../../../static/images/shape_icon.png') no-repeat center center; background-size: 42px 42px; }
+            .shape_span { display: block; width: 42px; height: 42px; @include extend-click(); background: url('~@/common/images/shape_icon.png') no-repeat center center; background-size: 42px 42px; }
         }
         .search_list_contain { height: 100%; padding: 102px 57px 0; overflow-y: auto;
             .shape_item { position: relative; padding-bottom: 20px;

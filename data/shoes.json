@@ -1,0 +1,34 @@
+{
+    "status": "0",
+    "msg": "",
+    "result":[{
+            "imgSrc": "require('../../common/images/list_card3.png')",
+            "commodityName": "简约个性鞋子",
+            "commodityIns": "增强你的时尚感"
+        },{
+            "imgSrc": "require('../../common/images/list_card4.png')",
+            "commodityName": "精美鞋子",
+            "commodityIns": "爱上居家美食"
+        },{
+            "imgSrc": "require('../../common/images/list_card1.png')",
+            "commodityName": "粉色时尚时钟",
+            "commodityIns": "时尚造型，小巧可爱"
+        },{
+            "imgSrc": "require('../../common/images/list_card2.png')",
+            "commodityName": "简约笔记本记事本",
+            "commodityIns": "记录生活点滴"
+        },{
+            "imgSrc": "require('../../common/images/list_card1.png')",
+            "commodityName": "粉色时尚时钟",
+            "commodityIns": "时尚造型，小巧可爱"
+        },{
+            "imgSrc": "require('../../common/images/list_card2.png')",
+            "commodityName": "简约笔记本记事本",
+            "commodityIns": "记录生活点滴"
+        },{
+            "imgSrc": "/static/img/list_card3.png",
+            "commodityName": "简约个性帽子",
+            "commodityIns": "增强你的时尚感"
+        }
+    ]
+}

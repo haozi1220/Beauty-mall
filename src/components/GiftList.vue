@@ -1,6 +1,6 @@
 <template>
     <ul class="gift_list" :class="{'pink_bg' : pinkBg}">
-        <li v-for="giftItem in giftList" class="gift_item">
+        <li v-for="(giftItem, index) in giftList" class="gift_item" :key="index">
             <img :src="giftItem.giftImg" class="gift_img">
             <span class="gift_info">
                 <span class="applicabel_obj">{{giftItem.giftApplicable}}</span>
@@ -31,7 +31,7 @@ export default {
                 &.gift_price { display: flex; justify-content: space-between; padding-top: 27px;
                     .price { font-size: 22px; line-height: 24px; color: #4da1dd; }
                     .start_count { vertical-align: bottom; font-size: 20px; line-height: 1; color: #a6a6b0;
-                        .start { display: inline-block; width: 24px; height: 24px; margin-right: 5px; background: url('../../static/images/like_icon.png') no-repeat center center; background-size: 100% 100%; }
+                        .start { display: inline-block; width: 24px; height: 24px; margin-right: 5px; background: url('~@/common/images/like_icon.png') no-repeat center center; background-size: 100% 100%; }
                     }
                 }
             }

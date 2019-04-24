@@ -27,8 +27,8 @@
 </template>
 
 <script>
-import TopNav from '../../components/TopNav'
-import StarScore from '../../components/StarScore'
+import TopNav from '@/components/TopNav'
+import StarScore from '@/components/StarScore'
 export default {
     data(){
         return {
@@ -69,11 +69,11 @@ export default {
             .detail_text { font-size: 22px; line-height: 26px; color: #6c6c6c; }
             .selected_quantily { display: flex; justify-content: space-between; align-items: center; margin-top: 40px; border-radius: 8px; background-color: #f7f7f7;
                 .text { display: block; padding-left: 42px; font-size: 24px; line-height: 88px; color: #999; }
-                .select_icon { display: block; width: 71px; height: 88px; background: url('../../../static/images/right_icon.png') no-repeat center center; background-size: 11px 20px; }
+                .select_icon { display: block; width: 71px; height: 88px; background: url('~@/common/images/right_icon.png') no-repeat center center; background-size: 11px 20px; }
             }
             .bottom_contain { display: flex; justify-content: flex-start; align-items: center; margin-top: 30px;
                 span { display: block; border-radius: 10px; background-color: #f0f7fe; font-size: 24px; line-height: 88px; color: #4c4c4c;
-                    &.collection { width: 130px; height: 88px; margin-right: 20px; background: url('../../../static/images/collection_icon.png') no-repeat center center #f0f7fe; background-size: 38px 38px; }
+                    &.collection { width: 130px; height: 88px; margin-right: 20px; background: url('~@/common/images/collection_icon.png') no-repeat center center #f0f7fe; background-size: 38px 38px; }
                     &.similar_contrast { width: 260px; margin-right: 40px; text-align: center; }
                     &.buy_btn { width: 186px; text-align: center; color: #fff; background-color: #4a90e2;}
                 }

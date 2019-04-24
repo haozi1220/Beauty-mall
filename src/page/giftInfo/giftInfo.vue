@@ -25,7 +25,7 @@
 </template>
 
 <script>
-import TopNav from '../../components/TopNav'
+import TopNav from '@/components/TopNav'
 export default {
     data(){
         return {
@@ -65,7 +65,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-    @import '../../common/sass/mixin';
+    @import '~@/common/sass/mixin';
     .gift_info { height: 100%; }
     .top_nav { position: absolute; left: 0; top: 0; width: 100%; z-index: 2; }
     .gift_info_contain { height: 100%; padding: 108px 57px 0; overflow-y: auto;

@@ -21,9 +21,9 @@ export default {
 <style scoped lang="scss">
     @import '../common/sass/mixin';
     .top_nav_wrap { display: flex; justify-content: space-between; padding: 27px 57px 36px; background: #fff;
-        .back_btn { width: 44px; height: 42px; @include extend-click(); background: url('../../static/images/back_icon.png') no-repeat center center; background-size: 24px 42px; }
+        .back_btn { width: 44px; height: 42px; @include extend-click(); background: url('~@/common/images/back_icon.png') no-repeat center center; background-size: 24px 42px; }
         .page_title { font-size: 32px; line-height: 42px; color: #484747; }
-        .shareSet { width: 42px; height: 42px; @include extend-click(); background: url('../../static/images/share_icon.png') no-repeat center center; background-size: 40px 40px; }
+        .shareSet { width: 42px; height: 42px; @include extend-click(); background: url('~@/common/images/share_icon.png') no-repeat center center; background-size: 40px 40px; }
     }
 </style>
 
