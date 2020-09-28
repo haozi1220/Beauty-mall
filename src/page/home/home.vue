@@ -39,7 +39,7 @@ export default {
 <style scoped lang="scss">
     @import '~@/common/sass/mixin';
     .home_contain { position: relative; padding: 0 57px; height: 100%;
-        .main_contain { position: absolute; top: 0; left: 57px; right: 57px; background-color: #fff; }
+        .main_contain { position: fixed; top: 0; left: 57px; right: 57px; background-color: #fff; }
         .top_contain { display: flex; justify-content: space-between; padding-top: 8px;
             .logo_contain { width: 48px; height: 56px;
                 img { display: block; width: 100%; height: 100%; }
